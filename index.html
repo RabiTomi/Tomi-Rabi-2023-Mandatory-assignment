@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starting page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 
@@ -37,7 +38,7 @@
         <a href="portfolio.html"><button>PORTFOLIO</button></a>
     </li>
     <li>
-        <a href="https://www.etsy.com/"><button>SHOP ( i wish lol) </button></a>
+        <a href="https://www.etsy.com/" target="_blank" rel="noopener noreferrer"><button>SHOP ( i wish lol) </button></a>
     </li>
 </ul>
 
@@ -47,13 +48,33 @@
 
 
 <footer>
-    <nav>
-        <ul class="three-buttons">
-            <li><img src="Pictures/mail.png" alt=""></li>
-            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><img src="Pictures/phon.png" alt=""></a></li>
-            <li><img src="Pictures/twit.png" alt=""></li>
-        </ul>
-    </nav>
+   
+
+
+    <div class="w3-container">
+        <nav>
+            <ul class="three-buttons">
+                <li><a href=""><img src="Pictures/mail.png" alt=""></a></li>
+                <li><img src="Pictures/phon.png" alt=""></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" rel="noopener noreferrer"><img src="Pictures/twit.png" alt=""></a></li>
+            </ul>
+        </nav>  
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"><img src="Pictures/mail.png" alt=""></button>
+      
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content">
+            <div class="w3-container">
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+              <p>Some text. Some text. Some text.</p>
+              <p>Some text. Some text. Some text.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
 
 </footer>
 

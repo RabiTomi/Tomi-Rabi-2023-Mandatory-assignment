@@ -78,37 +78,12 @@ ul {
   flex-direction: column;
 }
 
-
-
-
-
-
-}
-
-@media screen and (max-width: 600px) {
-  button{
-  
-
-
-footer nav { 
-  display: table;
-  margin-left: 100%;
-  margin-right: auto;
-
 }
 
 
-footer nav ul { 
-  display: flex;
-  
-}
 
-footer nav ul li { 
-  margin-left: 84px;
- 
-}
-  }
-}
+
+
 
 li:last-child{
  margin-bottom: none;
@@ -143,7 +118,6 @@ footer nav {
 
 footer nav ul { 
   display: flex;
-  
 }
 
 footer nav ul li { 
@@ -153,7 +127,7 @@ footer nav ul li {
 
 
 
-/*ABOUT PAGE - NOTHING CROSSES THIS LINE UNLESS I SAY SO*/
+/*!!!!!!!ABOUT PAGE!!!! - NOTHING CROSSES THIS LINE UNLESS I SAY SO*/
 
 
 
@@ -161,6 +135,7 @@ footer nav ul li {
   width: 538px;
   height: 739px;
   background-color: #3C2824;
+  color: #aa7f71;
 }
 
 .letstrythis{ 
@@ -183,48 +158,52 @@ footer nav ul li {
 .skills{
 background-color: #aa7f71;
 height: 300px;
-width: 300px;
-
+width: 400px;
+margin-left: 25px;
+margin-top: 20px;
 }
 
 .stuff {
   background-color: #aa7f71;
   height: 300px;
-  width: 600px;
+  width: 400px;
+  margin-left: 25px;
+  margin-top: 20px;
 }
 
 
 .threepics{
   display: flex;
   flex-wrap: wrap;
-  margin-left: 50px;
+  margin-left: 0px;
+  margin-top: 100px;
 
 }
 
 .first{
   background-color: #3C2824;
-  width: 100px;
-  height: 100px;
-  margin-left: 50px;
+  width: 300px;
+  height: 300px;
+  margin-left: 25px;
 }
 
 .second{
   background-color: #3C2824;
-  width: 100px;
-  height: 100px;
-  margin-left: 50px;
+  width: 300px;
+  height: 300px;
+  margin-left: 25px;
 }
 
 .third{
   background-color: #3C2824;
-  width: 100px;
-  height: 100px;
-  margin-left: 50px;
+  width: 300px;
+  height: 300px;
+  margin-left: 25px;
 }
 
 
 
-/* PORFTOLIO PAGE  PORTFOLIO PAGE    PORTFOLIO PAGE*/
+/* PORFTOLIO PAGE - PORTFOLIO PAGE  -  PORTFOLIO PAGE*/
 
 
 .boxtop {
@@ -251,7 +230,7 @@ nav ul li a {
   transition: 1s;
   color:#aa7f71;
   padding:0 10px 0 10px;
-  border-right: 2px solid #aa7f71;
+ 
 }
 
 
@@ -261,13 +240,11 @@ nav ul li:last-child a {
 }
 
 nav ul li a:hover {
-  color: #DC9972;
+  color: #db9770
 
 }
 
-nav ul li ul {
-  /*display: none;*/
-/*  position: absolute;*/  
+nav ul li ul { 
 justify-content: center;
   background-color: #DC9972;
   padding: 10px;
@@ -285,5 +262,95 @@ nav ul li ul li {
 nav ul li:hover ul {
   display: block;
 }
+
+
+.portfolio-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-nav li:nth-child(2) {
+  border-right: 2px solid #db9770;
+  padding-right: 50px;
+}
+.portfolio-nav li:nth-child(3) {
+  border-right: 2px solid #db9770;
+  padding-right: 50px;
+}
+
+
+.shopicon{
+  background-color: #DC9972;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 300px;
+}
+
+.profileicon{
+  background-color: #DC9972;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 300px;
+}
+
+
+.gallerybox{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gallery {
+  line-height:0;
+  -webkit-column-count:3; /* split it into 5 columns */
+  -webkit-column-gap:5px; /* give it a 5px gap between columns */
+  -moz-column-count:3;
+  -moz-column-gap:5px;
+  column-count:3;
+  column-gap:5px;
+}
+
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom:5px; /* to match column gap */
+}
+
+
+@media (max-width: 1200px) {
+  #gallery {
+   -moz-column-count:    4;
+   -webkit-column-count: 4;
+   column-count:         4;
+  }
+}
+
+@media (max-width: 1000px) {
+  #gallery {
+   -moz-column-count:    3;
+   -webkit-column-count: 3;
+   column-count:         3;
+  }
+}
+
+@media (max-width: 800px) {
+  #gallery {
+   -moz-column-count:    2;
+   -webkit-column-count: 2;
+   column-count:         2;
+  }
+}
+
+@media (max-width: 400px) {
+  #gallery {
+   -moz-column-count:    1;
+   -webkit-column-count: 1;
+   column-count:         1;
+  }
+}
+
 
 
