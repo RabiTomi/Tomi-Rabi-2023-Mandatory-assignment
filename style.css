@@ -16,7 +16,7 @@ ul {
 }
 
 ul li{
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 
@@ -55,7 +55,7 @@ button {
   border: none;
   border-radius: 45px;
   font-size: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   position: relative;
   isolation: isolate;
@@ -67,42 +67,7 @@ button:hover{
   opacity: 90%;
 }
 
-/* button > span {
-  background: orangered;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  z-index: -1;
-  opacity: 50%;
-}
 
-button> :first-child{
-  left: 0;
-  top: 0%;
-}
-
-button> :last-child{
-  left: 0;
-  top: 0%;
-}
-
-button ::before{
-width: 10%;
-content: '';
-position: absolute;
-background-color: aqua;
-aspect-ratio: 1;
-border-radius: 50%;
-inset: 0;
-margin: auto;
-z-index: -1;
-
-transition: transform 500ms;
-}
-
-button:active::before{
-transform: scale(20)
-} */
 
 
 @media screen and (max-width: 600px) {
@@ -207,10 +172,35 @@ footer nav ul li:first-child{
 .pointbig{
   position: absolute;
   margin-bottom: 100px;
-  width: 15px;
-  height: 15px;
+  width: 50px;
+  height: 50px;
   background-color: #db9770;
   border-radius: 50%;
+  margin-left: 440px;
+  margin-top: 230px;
+  
+}
+
+.pointtop {
+  position: absolute;
+  margin-bottom: 100px;
+  width: 35px;
+  height: 35px;
+  background-color: #db9770;
+  border-radius: 50%;
+  margin-left: 390px;
+  margin-top: 35px;
+}
+
+.pointright{
+  position: absolute;
+  margin-bottom: 100px;
+  width: 20px;
+  height: 20px;
+  background-color: #db9770;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-top: 200px;
 }
 
 .profilepic {
@@ -234,7 +224,7 @@ footer nav ul li:first-child{
 }
 
 h2{
-  margin-top: 30px;
+  margin-top: 25px;
   text-align:center;
   font-size: 40px;
 }
@@ -244,16 +234,27 @@ h3{
   font-size: 30px;
   margin-left: 30px;
   padding-right: 50px;
+  color: #C1B2A1;
+}
+
+.underline {
+  width: 100px;
+  height: 2.4px;
+  margin-left: 30px;
+  border-bottom: 2px;
+  background-color: #aa7f71;
 }
 
 .description {
   margin-right: 30px;
+  margin-top: 15px;
 }
 
 h4{
 font-size: 20px;
 margin-left: 30px;
 margin-top: 5px;
+color: #C1B2A1;
 }
 
 
@@ -285,7 +286,7 @@ flex-wrap: wrap;
   display: flex;
   flex-wrap: wrap;
   margin-left: 0px;
-  margin-top: 100px;
+  margin-top: 90px;
 
 }
 
@@ -293,7 +294,7 @@ flex-wrap: wrap;
   background-color: #C1B2A1;
   width: 300px;
   height: 300px;
-  margin-left: 25px;
+  margin-left: 20px;
   
 }
 
@@ -325,20 +326,67 @@ filter: blur(0px);
 
 
 .second{
-  background-color: #3C2824;
+  background-color: #C1B2A1;
   width: 300px;
   height: 300px;
-  margin-left: 25px;
+  margin-left: 20px;
 }
+
+.second img{
+  object-fit:cover;
+  width:300px;
+  border-radius: 30px;
+  filter: blur(4px);
+transition: 0.6s;
+}
+
+.second img:hover{
+  filter: blur(0px);
+  }
+
+.secondimgtext {
+    font-size:43px;
+  color: #3C2824;
+  
+    position: relative;
+    top: -50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border-bottom: 0;
+}
+
 
 .third{
-  background-color: #3C2824;
+  background-color: #C1B2A1;
   width: 300px;
   height: 300px;
-  margin-left: 25px;
+  margin-left: 20px;
+}
+
+.third img{
+  object-fit:cover;
+            width:300px;
+            border-radius: 30px;
+            filter: blur(4px);
+  transition: 0.6s;
 }
 
 
+
+.third img:hover{
+filter: blur(0px);
+}
+
+.thirdtext {
+  font-size:43px;
+color: #3C2824;
+
+  position: relative;
+  top: -50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  border-bottom: 0;
+}
 
 /* PORFTOLIO PAGE - PORTFOLIO PAGE  -  PORTFOLIO PAGE*/
 
