@@ -226,11 +226,12 @@ footer nav ul li:first-child{
 h2{
   margin-top: 25px;
   text-align:center;
-  font-size: 40px;
+  font-size: 37px;
+  color: #C1B2A1;
 }
 
 h3{
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 30px;
   margin-left: 30px;
   padding-right: 50px;
@@ -238,11 +239,11 @@ h3{
 }
 
 .underline {
-  width: 100px;
-  height: 2.4px;
+  width: 110px;
+  height: 2.7px;
   margin-left: 30px;
   border-bottom: 2px;
-  background-color: #aa7f71;
+  background-color: #db9770;
 }
 
 .description {
@@ -257,29 +258,107 @@ margin-top: 5px;
 color: #C1B2A1;
 }
 
+.undericons{
+  position: relative;
 
+}
+
+.undericons ul {
+  display: flex;
+  margin-left: 80px;
+  margin-right: 100px;
+  margin-top: 5px;
+}
+
+.undericons ul li {
+  margin-left: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.i1 {
+  position: relative;
+ margin-top: 15px ;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+
+ 
+}
+
+.i2 {
+  position: relative;
+  margin-top: 15px ;
+   width: 35px;
+   height: 35px;
+   
+   border-radius: 50%;
+}
+
+.i3 {
+  position: relative;
+  margin-top: 15px ;
+   width: 35px;
+   height: 35px;
+   
+   border-radius: 50%;
+}
+
+.i4 {
+  position: relative;
+  margin-top: 15px ;
+   width: 35px;
+   height: 35px;
+   
+   border-radius: 50%;
+  
+}
 
 .mainpart {
   display: flex;
 }
 
 .skills{
-background-color: #aa7f71;
+
 height: 300px;
 width: 400px;
-margin-left: 25px;
-margin-top: 20px;
+margin-left: 30px;
+margin-top: 40px;
 margin-bottom: 2;
-flex-wrap: wrap;
+
+}
+
+.ti {
+  font-size: xx-large;
+  margin-bottom: 15px;
+}
+
+.pa {
+  font-size: large;
+  line-height: 40px;
 }
 
 .stuff {
-  background-color: #aa7f71;
-  height: 300px;
-  width: 400px;
-  margin-left: 25px;
-  margin-top: 20px;
+  
+height: 300px;
+width: 400px;
+margin-left: 30px;
+margin-top: 40px;
+margin-bottom: 2;
 }
+
+.cim {
+  font-size: xx-large;
+  margin-bottom: 15px;
+}
+
+.szov {
+ 
+  font-size: large;
+  line-height: 40px;
+}
+
 
 
 .threepics{
