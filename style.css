@@ -662,7 +662,7 @@ nav ul li:last-child a {
 }
 
 nav ul li a:hover {
-  color: #551003
+  color: #5e1306;
 
 }
 
@@ -689,19 +689,23 @@ nav ul li a:hover {
 
 
 .shopicon{
-  background-color: #3C2824;
-  width: 30px;
-  height: 30px;
+  background-color: #db9770;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-left: 300px;
+  background: url('design/juju.png') center center;
+  background-size: cover;
 }
 
 .profileicon{
   background-color: #3C2824;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-right: 300px;
+  background: url('Pictures/Dorzomborz.jpg') center center;
+  background-size: cover;
 }
 
 .changethecolor{
