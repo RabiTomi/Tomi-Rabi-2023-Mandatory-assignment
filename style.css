@@ -124,6 +124,7 @@ li:last-child{
   border-radius: 50%;
   margin-left:auto;
   margin-right: auto;
+  margin-top: 15px;
 }
 
 
@@ -160,6 +161,7 @@ footer nav ul li:first-child{
 
 .aside {
   width: 538px;
+  /* height: 739px; */
   height: 739px;
   background-color: #3C2824;
   color: #aa7f71;
@@ -267,7 +269,8 @@ color: #C1B2A1;
   display: flex;
   margin-left: 80px;
   margin-right: 100px;
-  margin-top: 5px;
+  margin-top: 15px;
+  height: 40px;
 }
 
 .undericons ul li {
@@ -369,32 +372,103 @@ margin-bottom: 2;
 
 }
 
+
+/* 
 .first{
   background-color: #C1B2A1;
   width: 300px;
   height: 300px;
   margin-left: 20px;
-  
+  background: url('Pictures/owl.png') center center;
+  background-size: cover;
+  object-fit:cover;
+  width:300px;
+  border-radius: 30px;
+  filter: blur(4px);
+transition: 0.6s;
+}
+
+.first:hover {
+  border-radius: 0px;
+  filter: blur(0px);
+transition: 0.6s;
 }
 
 .centered{
+  z-index: 4454;
   font-size:43px;
   color: #3C2824;
-  
+  filter: blur(0px) !important;
     position: relative;
-    top: -50%;
+     top: -50%;
     left: 80%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
     border-bottom: 0;
   
 }
 
+.first a .centered {
+  filter: blur(0px) !important;
+}
+
+.first a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+}
+
 .first img{
-  object-fit:cover;
-            width:300px;
-            border-radius: 30px;
-            filter: blur(4px);
+ 
+} */
+
+
+
+.first {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.first::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('Pictures/owl.png') center center;
+  background-size: cover;
+  filter: blur(4px);
+  z-index: -1;
   transition: 0.6s;
+}
+
+.first:hover::before {
+  border-radius: 0;
+  filter: blur(0);
+}
+
+.centered {
+  z-index: 1;
+  font-size: 43px;
+  color: #3c2824;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.first a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  text-decoration: none; /* Optional: Remove default link styles */
 }
 
 
@@ -404,7 +478,7 @@ filter: blur(0px);
 }
 
 
-.second{
+/* .second{
   background-color: #C1B2A1;
   width: 300px;
   height: 300px;
@@ -432,22 +506,108 @@ transition: 0.6s;
     left: 70%;
     transform: translate(-50%, -50%);
     border-bottom: 0;
-}
+} */
 
 
-.third{
-  background-color: #C1B2A1;
+.second {
+  position: relative;
   width: 300px;
   height: 300px;
   margin-left: 20px;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
-.third img{
-  object-fit:cover;
-            width:300px;
-            border-radius: 30px;
-            filter: blur(4px);
+.second::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('Pictures/guy.jpg') center center;
+  background-size: cover;
+  filter: blur(4px);
+  z-index: -1;
   transition: 0.6s;
+}
+
+.second:hover::before {
+  border-radius: 0;
+  filter: blur(0);
+}
+
+.secondimgtext {
+  z-index: 1;
+  font-size: 43px;
+  color: #3c2824;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.second a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  text-decoration: none; /* Optional: Remove default link styles */
+}
+
+
+
+.second img:hover{
+filter: blur(0px);
+}
+
+
+.third {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.third::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('Pictures/1fogakkész.jpg') center center;
+  background-size: cover;
+  filter: blur(4px);
+  z-index: -1;
+  transition: 0.6s;
+}
+
+.third:hover::before {
+  border-radius: 0;
+  filter: blur(0);
+}
+
+.thirdtext {
+  z-index: 1;
+  font-size: 43px;
+  color: #3c2824;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.third a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  text-decoration: none; /* Optional: Remove default link styles */
 }
 
 
@@ -456,18 +616,10 @@ transition: 0.6s;
 filter: blur(0px);
 }
 
-.thirdtext {
-  font-size:43px;
-color: #3C2824;
 
-  position: relative;
-  top: -50%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  border-bottom: 0;
-}
 
-/* PORFTOLIO PAGE - PORTFOLIO PAGE  -  PORTFOLIO PAGE*/
+
+/* PORFTOLIO PAGE - PORTFOLIO PAGE  -  PORTFOLIO PAGE -PORTFOLIO PAGE  -  PORTFOLIO PAGE*/
 
 
 .boxtop {
@@ -506,28 +658,11 @@ nav ul li:last-child a {
 }
 
 nav ul li a:hover {
-  color: #db9770
+  color: #551003
 
 }
 
-/* nav ul li ul { 
-justify-content: center;
-  background-color: #DC9972;
-  padding: 10px;
-  border-radius: 15px; 
-  position: absolute;
-  width: 150px;
-}
 
-nav ul li ul li {
-  justify-content: center;
-  padding: 10px;
-}
-
-
-nav ul li:hover ul {
-  display: block;
-} */
 
 
 .portfolio-nav{
@@ -535,20 +670,22 @@ nav ul li:hover ul {
   justify-content: space-between;
   align-items: center;
   height: 115px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .portfolio-nav li:nth-child(2) {
-  border-right: 2px solid #db9770;
+  border-right: 2px solid #3C2824;
   padding-right: 50px;
 }
 .portfolio-nav li:nth-child(3) {
-  border-right: 2px solid #db9770;
+  border-right: 2px solid #3C2824;
   padding-right: 50px;
 }
 
 
 .shopicon{
-  background-color: #DC9972;
+  background-color: #3C2824;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -556,7 +693,7 @@ nav ul li:hover ul {
 }
 
 .profileicon{
-  background-color: #DC9972;
+  background-color: #3C2824;
   width: 30px;
   height: 30px;
   border-radius: 50%;
